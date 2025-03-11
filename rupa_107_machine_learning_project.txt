@@ -1,0 +1,67 @@
+Healthcare Data Analysis Using Machine Learning
+1. Introduction
+Healthcare data is rich in insights that can help improve patient care, optimize medical services, and predict future trends. This project aims to analyze healthcare data using machine learning techniques such as Decision Trees, K-Means Clustering, Time Series Analysis, and Association Rules Mining.
+2. Dataset
+The dataset used in this project combines multiple sources, including Appointment, Billing, Doctor, Medical Procedures, and Patient information. These datasets were merged to create a comprehensive healthcare dataset (rupa_107_machine_learning_project.csv).
+
+Key Features:
+•	PatientID: Unique identifier for patients.
+•	AppointmentID: Unique identifier for appointments.
+•	Specialization: The field of specialization of the doctor.
+•	ProcedureName: Name of the medical procedure.
+•	Amount: Cost of medical procedures.
+•	Items: Medical items used during the procedure.
+•	InvoiceID: Billing-related information.
+•	Date: Date of appointments and transactions.
+
+3. Data Preprocessing
+Steps Taken:
+•	Data Cleaning: Handled missing values by removing rows with critical null values.
+•	Feature Engineering: Encoded categorical variables using LabelEncoder.
+•	Normalization: Applied MinMaxScaler for numerical columns to ensure consistency.
+•	Merging Datasets: Merged multiple CSV files to create a complete dataset.
+
+4. Machine Learning Models Used
+
+4.1 Decision Tree Regression
+•	Used to predict the medical cost (Amount) based on features like Specialization, Items, and ProcedureName.
+•	Implemented GridSearchCV to tune hyperparameters such as max_depth, min_samples_split, and min_samples_leaf.
+•	Visualized the decision tree structure using matplotlib.
+
+
+4.2 K-Means Clustering
+•	Used to segment patients based on Specialization and Amount.
+•	Applied StandardScaler to normalize data before clustering.
+•	Determined optimal clusters using the Elbow Method.
+•	Evaluation Metrics: 
+o	Silhouette Score (to assess clustering quality)
+
+4.3 Association Rules (Apriori Algorithm)
+•	Extracted frequent patterns in medical procedures using apriori.
+•	Generated association rules with confidence and lift metrics.
+•	Findings: 
+o	Identified co-occurring medical procedures and item purchases.
+o	Improved recommendations for medical supplies based on past data.
+
+4.4 Time Series Analysis
+•	Analyzed trends in Amount, AppointmentID, and PatientID over time.
+•	Applied seasonal_decompose to identify trend, seasonality, and residual components.
+•	Suggested ARIMA for future predictions of appointment trends.
+
+5. Data Visualization
+Several visualizations were created to support the analysis:
+1.	Decision Tree Structure – Shows model decision paths.
+2.	Elbow Curve – Determines the optimal number of clusters.
+3.	Cluster Scatter Plot – Highlights patient segmentation.
+4.	Time Series Decomposition – Shows trends and seasonality in medical costs.
+
+6. Results and Insights
+•	Decision Tree Regression: The model successfully predicted medical costs with reasonable accuracy.
+•	K-Means Clustering: Patients were grouped based on medical expenses and specialization, helping in personalized recommendations.
+•	Association Rules: Uncovered relationships between medical procedures and prescribed items, enhancing inventory planning.
+•	Time Series Analysis: Identified seasonal trends in medical visits, aiding in better scheduling of medical staff.
+7. Conclusion and Future Work
+This project demonstrates how machine learning can be applied to healthcare data to uncover meaningful insights.
+
+
+

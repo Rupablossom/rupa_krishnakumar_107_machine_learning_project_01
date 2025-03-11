@@ -1,0 +1,2 @@
+antecedents,consequents,antecedent support,consequent support,support,confidence,lift,representativity,leverage,conviction,zhangs_metric,jaccard,certainty,kulczynski
+frozenset({'Cataract surgery'}),frozenset({'Insulin pump management for diabetes'}),0.01680672268907563,0.04201680672268908,0.005042016806722689,0.30000000000000004,7.140000000000001,1.0,0.004335851987853965,1.3685474189675872,0.8746438746438746,0.09375000000000001,0.2692982456140351,0.21000000000000002
